@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    min-height: 100vh;
+}
+.sidebar .FacePatrol{
+    size: 40px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-bottom: 20vh;
+}
+.sidebar span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+.sidebar-items button{
+    max-width: 201px;
+    width: 100%;
+    height: 49px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black ;
+    align-items: center;
+    margin-bottom: 10px;
+   
+
+}
+.sidebar-items button:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    background-color: #F7F9F9;
+    width: 25vw;
+    min-height: 100vh;
+    
+    
+}
+.FacePatrol h1{
+    font-weight: 400;
+}
+.main{
+    position: absolute;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.main-top h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 30px;
+}
+.main-top2{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main-top2 .card{
+    width: 40%;
+    height: 25vh;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.card a{
+    color: grey;
+    
+}
+.main-top2 .recent-logs{
+    width: 84%;
+    height: 30vh;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+
+}
+.recent-logs .red{
+    color: red;
+}
+.recent-logs .time{
+    color: grey;
+}
+.recent-logs .student{
+    color: green;
+    font-weight: bold;
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FacePatrol Devices</title>
+  <link rel="stylesheet" href="FacePatrol devices style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="myFunction.js"></script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="FacePatrol">
+      <button onclick="myCloseFunction()" class="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h1>FacePatrol</h1>
+    </div>
+    <div class="sidebar-items">
+        <span class="home">
+            <button>Home</button>
+        </span>
+        <span class="users">
+            <button>Users</button>
+        </span>
+        <span class="devices">
+            <button>Devices</button>
+        </span>
+      </div>  
+  </div>
+  <div class="main" id="main">
+    <div class="main-top">
+      <button onclick="myFunction()" class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <h1>Devices</h1>
+    </div>
+      <div class="device-panel">
+        <p>Name</p>
+        <p>Position</p>
+        <p class="data-1">Status</p>
+      </div>
+      <div class="camera-container-1">
+        <div class="camera-1">
+          <p><b>Camera#1</b></p>
+          <p>Sac5</p>
+          <p class="data-1">Active</p>
+        </div>
+        <div class="icon" id="icon-1"><i class="fa-solid fa-pen"></i></div>
+      </div>
+      <div class="camera-container-2">
+        <div class="camera-2">
+          <p><b>Camera#2</b></p>
+          <p>Plaza</p>
+          <p class="data-1">Active</p>
+        </div>
+        <div class="icon" id="icon-1"><i class="fa-solid fa-pen"></i></div>
+      </div>
+      <div class="camera-container-3">
+        <div class="camera-3">
+          <p><b>Camera#3</b></p>
+          <p>Galaxy</p>
+          <p class="data-1">Active</p>
+        </div>
+        <div class="icon" id="icon-1"><i class="fa-solid fa-pen"></i></div>
+      </div>
+  </div>
+</body>
+</html>

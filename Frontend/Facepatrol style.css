@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+.login-container{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;  
+
+}
+.login-container .bold{
+    font-weight: 700;
+}
+
+.input-box{
+    max-width: 364px;
+    height: 66px;
+    margin: 10px 0; 
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+    margin: 28px 0;
+    border:2px solid #808B96 ;
+    border-radius: 20px;
+    
+}
+.input-box input::placeholder{
+    color: #808B96 ;
+}
+.login-container .btn{
+    width: 364px;
+    height: 66px;
+    background: #000000;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.login-container button img{
+    width: 40px;
+    margin-right: 5px;
+}
+.login-container button{
+    max-width:364px;
+    width: 100%;
+    height: 66px;
+    margin: 60px 0;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #808B96;
+    color: #808B96 ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.login-container hr{
+    border: 0;
+    height: 1px;
+    background-color: #000000;
+    margin: 3px;
+}
+.login-container .line{
+    display:block;
+    width: 25px;
+    margin: auto;
+    background: white;
+    font-size: 20px;
+    margin-top: -19px;
+}
+@media only screen and (max-width:768px){
+    .login-container{
+        font-size: 30px;
+    }
+    .login-container button{
+        max-width: 280px;
+        width: 100%;
+        height: 58px;
+        border-radius: 0px;
+        border: 1px solid #808B96;   
+    }
+    .login-container button img{
+        width: 30px;
+    }
+    .input-box{
+        max-width: 280px;
+        height: 58px; 
+    }
+    .input-box input{
+        border:1px solid #808B96 ;
+        border-radius: 0px;
+    }
+    .login-container .line{
+        width: 20px;
+        font-size: 15px;
+    }
+    .login-container hr{
+        height: 0.5px;
+        margin: 7px;
+    }
+
+}

@@ -13,7 +13,7 @@ model.load_weights('keras_model/my_model.weights.h5')
 sgd = Adam(learning_rate=0.0005)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(0)
 
 while True:
     ret, frame = capture.read()

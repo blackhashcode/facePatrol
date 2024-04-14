@@ -2,7 +2,7 @@ import cv2
 
 detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 print("[INFO] starting video stream...")
-capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(0)
 total = 0
 
 while True:

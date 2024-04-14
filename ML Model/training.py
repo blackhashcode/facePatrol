@@ -77,8 +77,6 @@ print("evaluate......")
 score, accuracy = model.evaluate(x_train[:3], y_train[:3], batch_size=nbatch_size)
 print('score:', score, 'accuracy:', accuracy)
 
-# Save the entire model (architecture + weights + optimizer state)
-model.save('keras_model/my_model.keras')  # SavedModel format
-
-# Additionally, save just the weights in a separate file if needed
+# Model saving
+model.save('keras_model/my_model.keras')
 model.save_weights('keras_model/my_model.weights.h5')

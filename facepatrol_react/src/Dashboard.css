@@ -1,207 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
-body{
-    min-height: 100vh;
+.dashboardbody {
+  min-height: 100vh;
 }
-.sidebar{
-    position: fixed;
-    background-color: #F7F9F9;
-    width: 25vw;
-    min-height: 100vh;
-    
+.sidebar {
+  position: fixed;
+  background-color: #f7f9f9;
+  width: 25vw;
+  min-height: 100vh;
 }
-.sidebar .FacePatrol{
-    size: 40px;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    margin-bottom: 20vh;
+.sidebar .FacePatrol {
+  size: 40px;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-bottom: 20vh;
 }
-.sidebar span{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    
+.sidebar span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.sidebar-items button{
-    max-width: 201px;
-    width: 100%;
-    height: 49px;
-    border-radius: 20px;
-    background-color: white;
-    border: 1px solid black;
-    color: black ;
-    align-items: center;
-    margin-bottom: 10px;
-   
+.sidebar-items button {
+  max-width: 201px;
+  width: 100%;
+  height: 49px;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sidebar-items button:hover {
+  color: white;
+  background: black;
+  cursor: pointer;
+}
+.FacePatrol h1 {
+  font-weight: 400;
+}
+.main {
+  position: absolute;
+  right: 0;
+  max-width: 75vw;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.main-top h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 30px;
+}
+.main-top2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-top2 .card {
+  width: 40%;
+  height: 25vh;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.card a {
+  color: grey;
+}
+.main-top2 .recent-logs {
+  width: 84%;
+  height: 30vh;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.recent-logs .red {
+  color: red;
+}
+.recent-logs .time {
+  color: grey;
+}
+.recent-logs .student {
+  color: green;
+  font-weight: bold;
+}
+.menu {
+  display: none;
+}
+.view-logs {
+  display: none;
+}
+.close {
+  display: none;
+}
 
-}
-.sidebar-items button:hover{
-    color: white;
-    background: black;
-    cursor: pointer;
-}
-.FacePatrol h1{
-    font-weight: 400;
-}
-.main{
-    position: absolute;
-    right: 0;
-    max-width: 75vw;
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    background-color: #f7f9f9;
+    max-width: 100vw;
     width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-}
-.main-top h1{
-    font-size: 40px;
-    font-weight: 700;
-    margin: 10px 30px;
-}
-.main-top2{
+    min-height: 100vh;
+  }
+
+  .main {
+    display: block;
+    position: fixed;
+    background-color: #f7f9f9;
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-top2 {
     display: flex;
-    flex-wrap: wrap;
-    
-}
-.main-top2 .card{
-    width: 40%;
+    justify-content: center;
+  }
+  .recent-logs {
+    display: none;
+  }
+
+  .main-top2 .card {
+    justify-content: center;
+    max-width: 70vw;
+    width: 100%;
     height: 25vh;
     margin: 20px;
     background-color: white;
     border-radius: 20px;
     padding: 20px 20px;
-}
-.card a{
-    color: grey;
-    
-}
-.main-top2 .recent-logs{
-    width: 84%;
-    height: 30vh;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px 20px;
-
-}
-.recent-logs .red{
-    color: red;
-}
-.recent-logs .time{
-    color: grey;
-}
-.recent-logs .student{
-    color: green;
+  }
+  .menu {
+    border: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 30px 30px;
+    cursor: pointer;
     font-weight: bold;
+    background-color: transparent;
+  }
+  .close {
+    border: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin: 30px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+  }
 
-}
-.menu{
-    display: none;
-}
-.view-logs{
-    display: none;
-}
-.close{
-    display: none;
-}
-
-@media only screen and (max-width:768px){
-    .sidebar{
-        display: none;
-        position: fixed;
-        background-color: #F7F9F9;
-        max-width: 100vw;
-        width: 100%;
-        min-height: 100vh;
-        
-    }
- 
-    .main{
-        display: block;
-        position: fixed;
-        background-color: #F7F9F9;
-        max-width: 100vw;
-        width: 100%;
-        min-height: 100vh;
-        
-    }
-    .main-top2{
-       display: flex;
-       justify-content: center;
-        
-    }
-    .recent-logs{
-        display: none;
-    }
-    
-    .main-top2 .card{
-        justify-content: center;
-        max-width: 70vw;
-        width: 100%;
-        height: 25vh;
-        margin: 20px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 20px 20px;
-    }
-    .menu{
-        border: none;
-        display: block;
-        position: absolute;
-        right: 0;
-        margin: 30px 30px;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: transparent;
-    }
-    .close{
-        border: none;
-        display: block;
-        position: absolute;
-        right: 0;
-        margin: 30px 30px;
-        cursor: pointer;
-        font-weight: bold;
-        background-color: transparent;
-    }
-    
-    .view-logs{
-        display: block;
-    }
-    .log-div{
-        display: flex;
-        justify-content: center;
-    }
-    .view-logs button{
-        max-width: 201px;
-        width: 100%;
-        height: 49px;
-        border-radius: 20px;
-        background-color: #424949;
-        border: 1px solid #424949;
-        color: white ;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    .view-logs button:hover{
-        background-color: black;
-    }
-    
-   
-    
-    
-    
-   
-    
-   
-    
-
-
+  .view-logs {
+    display: block;
+  }
+  .log-div {
+    display: flex;
+    justify-content: center;
+  }
+  .view-logs button {
+    max-width: 201px;
+    width: 100%;
+    height: 49px;
+    border-radius: 20px;
+    background-color: #424949;
+    border: 1px solid #424949;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .view-logs button:hover {
+    background-color: black;
+  }
 }
